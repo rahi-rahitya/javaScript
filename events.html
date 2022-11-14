@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="demo()">submit</button>
+
+
+	<script type="text/javascript">
+		function demo(){
+			alert("danger")
+		}
+	</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function save( ){
+			var s=document.getElementById("event").innerHTML;
+			console.log(s)
+			var r=document.getElementById("India").innerHTML;
+			console.log(r)
+			var user=document.getElementById("user").value;
+			console.log(user)
+			var intro=document.getElementsByClassName("intro");		
+			var list=document.getElementsByTagName("li");
+			for(var i=0;i<intro.length;i++){
+				console.log(intro[i].innerHTML)
+			}
+			for(var j=0;j<list.length;j++){
+				console.log(list[j].innerHTML)
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<input id="user"/>
+	<h1 id="event">events in javascript</h1>
+	<p id="India">I Love India</p>
+	<button onclick="save()">submit</button>
+	<p class="intro">hi</p>
+	<h1 class="intro">how r uh</h1>
+	<h4 class="intro">how it's going on</h4>
+	<p class="intro">believe in urself</p>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>0</li>
+	</ul>
+
+
+</body>
+</html>
+
