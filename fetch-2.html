@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<Section id="emp" >
+		
+	</Section>
+	<script type="text/javascript">
+		fetch("https://api.nationalize.io?name=nathaniel")
+			.then((res)=>{
+				console.log(res)
+				return res.json()
+			})
+			.then((jsonResponse)=>{
+					console.log(jsonResponse)
+					display(jsonResponse.country)
+				})
+				function display(data){
+					var block=document.getElementById("emp")
+					for(i=0;i<data.length;i++){
+						block.innerHTML+=
+						`<div><p>${data[i].probability}</p></div>`
+							
+						
+					}
+				}
+		
+	</script>
+
+</body>
+</html>

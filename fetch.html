@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -10,13 +10,13 @@
 		
 	</Section>
 	<script type="text/javascript">
-		/*fetch("https://reqres.in/api/users?page=2")
+		fetch("https://reqres.in/api/users?page=2")
 				.then((res)=>{
 					console.log(res)
 					return res.json()
 				})
 				.then((jsonResponse)=>{
-					//console.log(jsonResponse)
+					console.log(jsonResponse)
 					display(jsonResponse.data)
 				})
 				function display(employees){
@@ -28,25 +28,8 @@
 							<img src="${employees[i].avatar}" width="55%"/>
 						</div>`
 					}
-				}*/
-		fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
-				.then((res)=>{
-					//console.log(res)
-					return res.json()
-				})
-				.then((jsonResponse)=>{
-					console.log(jsonResponse)
-					display(jsonResponse.data)
-				})
-				function display(time){
-					var block=document.getElementById("emp")
-					for(i=0;i<time.length;i++){
-						block.innerHTML+=
-							`<p>${time[i].time}</p>`
-							
-*/
 				}
-	</script>
-
+		
+</script>
 </body>
 </html>
